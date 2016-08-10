@@ -1,8 +1,8 @@
-open link from clipboard chrome extension
+các links để tìm phòng trọ tại Đà Nẵng Việt Nam
 =================
-- copy text and click extension icon to open link.
-- You can define link pattern.
+- tìm phòng trọ tại Đà Nẵng Việt Nam.
 <br/>
-<b>Default setting</b>
-- if last tab match url pattern, update url and reload tab.
-- always open link from fixed value is false.
+<b>Sites</b>
+- chotot.com.
+- muaban.net.
+..
