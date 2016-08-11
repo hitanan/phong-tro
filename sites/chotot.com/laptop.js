@@ -1,4 +1,4 @@
-var keywords= ["máy bàn", "để bàn", "bộ máy","bộ core", "máy bộ", "máy tính bàn", "case "];
+var keywords= ["máy bàn", "để bàn", "bộ máy","bộ core", "máy bộ", "dàn máy", "máy tính bàn", "case "];
 
 jQuery(".listing-rows .chotot-list-row").each(function(){
 	// if (jQuery(this).has('span.ad-type-suf').length ) {

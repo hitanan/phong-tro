@@ -7,7 +7,8 @@ var links = [
 	'http://rongbay.com/Da-Nang/Nha-trong-ngo-hem-kiet-Thue-va-cho-thue-nha-c272-t791-d141.html?pr=6&md=141',
 	'http://rongbay.com/Da-Nang/Nha-rieng-nguyen-can-Thue-va-cho-thue-nha-c272-t786-d141.html?pr=6&md=141',
 	'http://rongbay.com/Da-Nang/Nha-tro-Phong-tro-Thue-va-cho-thue-nha-c272-t788-d141.html?pr=6&md=141',
-	'https://www.chotot.com/quang-nam-da-nang/mua-ban-may-tinh-laptop'
+	'https://www.chotot.com/quang-nam-da-nang/mua-ban-may-tinh-laptop',
+	'http://rongbay.com/Da-Nang/Laptop-Netbook-May-tinh-va-Laptop-c1-t28.html'
 ];
 
 function gotoPaths(ids) {
@@ -56,6 +57,7 @@ function getIndex(thisId) {
 	var n = thisId.substring(i+1, thisId.length);
 	return n;
 }
+
 // When the popup HTML has loaded
 window.addEventListener('load', function(evt) {
 	
@@ -68,7 +70,7 @@ window.addEventListener('load', function(evt) {
 		gotoPaths(ids);
 	});
 	document.getElementById('timlaptop').addEventListener('click', function(e) {
-		var ids = [8];
+		var ids = [9,8];
 		gotoPaths(ids);
 	});
 	
@@ -78,7 +80,6 @@ window.addEventListener('load', function(evt) {
 	document.getElementById('link_0').addEventListener('click', function(e) {
 		gotoIndex(getIndex(this.id));
 	});
-	
 	document.getElementById('link_1').addEventListener('click', function(e) {
 		gotoIndex(getIndex(this.id));
 	});
@@ -98,6 +99,12 @@ window.addEventListener('load', function(evt) {
 		gotoIndex(getIndex(this.id));
 	});
 	document.getElementById('link_7').addEventListener('click', function(e) {
+		gotoIndex(getIndex(this.id));
+	});
+	document.getElementById('link_8').addEventListener('click', function(e) {
+		gotoIndex(getIndex(this.id));
+	});
+	document.getElementById('link_9').addEventListener('click', function(e) {
 		gotoIndex(getIndex(this.id));
 	});
 
