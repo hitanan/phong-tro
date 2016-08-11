@@ -30,7 +30,8 @@
       "matches": ["https://www.chotot.com/quang-nam-da-nang/thue-phong-tro*", "https://www.chotot.com/quang-nam-da-nang/thue-nha-dat*"],
       "js": ["jquery.min.js", "sites/chotot.com/index.js"]
     }, {
-      "matches": ["https://www.chotot.com/quang-nam-da-nang/mua-ban-may-tinh-laptop*","https://m.chotot.com/quang-nam-da-nang/mua-ban-may-tinh-laptop*"],
+      "matches": ["https://www.chotot.com/quang-nam-da-nang/mua-ban-may-tinh-laptop*",
+	  "https://m.chotot.com/quang-nam-da-nang/mua-ban-may-tinh-laptop*", "https://www.chotot.com/quang-nam-da-nang/da-nang/mua-ban-may-tinh-laptop*"],
       "js": ["jquery.min.js", "sites/chotot.com/laptop.js"]
     }
 	],
