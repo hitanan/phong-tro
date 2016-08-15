@@ -35,5 +35,6 @@
       "js": ["jquery.min.js", "sites/chotot.com/laptop.js"]
     }
 	],
+	"web_accessible_resources": [ "/*"],
 	"manifest_version": 2
 }

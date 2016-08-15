@@ -61,52 +61,36 @@ function getIndex(thisId) {
 // When the popup HTML has loaded
 window.addEventListener('load', function(evt) {
 	
-    document.getElementById('timphong').addEventListener('click', function(e) {
+    $('#timphong').on('click', function(e) {
 		var ids = [7,3,1];
 		gotoPaths(ids);
 	});
-	document.getElementById('timnha').addEventListener('click', function(e) {
+	$('#timnha').on('click', function(e) {
 		var ids = [6,5,4,2];
 		gotoPaths(ids);
 	});
-	document.getElementById('timlaptop').addEventListener('click', function(e) {
+	$('#timlaptop').on('click', function(e) {
 		var ids = [9,8];
 		gotoPaths(ids);
 	});
+	$('#timtonghop').on('click', function(e) {
+		var ids = [1,2,8];
+		gotoPaths(ids);
+	});
 	
-	document.getElementById('timnha').addEventListener('click', function(e) {
+	// create string link ids
+	var linkIds = '';
+	for (let i = 0; i < links.length; i++) {
+		linkIds += '#link_' + i;
+		if (i != (links.length - 1)) {
+			linkIds += ',';
+		}
+	}
+	// addd listener
+	$(linkIds).on('click', function(e) {
 		gotoIndex(getIndex(this.id));
 	});
-	document.getElementById('link_0').addEventListener('click', function(e) {
-		gotoIndex(getIndex(this.id));
-	});
-	document.getElementById('link_1').addEventListener('click', function(e) {
-		gotoIndex(getIndex(this.id));
-	});
-	document.getElementById('link_2').addEventListener('click', function(e) {
-		gotoIndex(getIndex(this.id));
-	});
-	document.getElementById('link_3').addEventListener('click', function(e) {
-		gotoIndex(getIndex(this.id));
-	});
-	document.getElementById('link_4').addEventListener('click', function(e) {
-		gotoIndex(getIndex(this.id));
-	});
-	document.getElementById('link_5').addEventListener('click', function(e) {
-		gotoIndex(getIndex(this.id));
-	});
-	document.getElementById('link_6').addEventListener('click', function(e) {
-		gotoIndex(getIndex(this.id));
-	});
-	document.getElementById('link_7').addEventListener('click', function(e) {
-		gotoIndex(getIndex(this.id));
-	});
-	document.getElementById('link_8').addEventListener('click', function(e) {
-		gotoIndex(getIndex(this.id));
-	});
-	document.getElementById('link_9').addEventListener('click', function(e) {
-		gotoIndex(getIndex(this.id));
-	});
+
 
 
 });
