@@ -1,7 +1,7 @@
 {
-	"name": "open chotot.com, ..",
+	"name": "tìm phòng, laptop cũ",
 	"author": "An Nguyen",
-	"description": "open chotot.com, ..",
+	"description": "tìm phòng trọ, laptop cũ tại Đà Nẵng Việt Nam, trên chotot.com, ..",
 	"version": "1.0",
 	"permissions": ["contextMenus", "tabs", "clipboardRead", "storage"],
 	"icons": {
@@ -23,17 +23,18 @@
 		"chrome_style": true,
 		"page": "options.html"
 	},
-	"content_scripts": [   {
-      "matches": ["http://192.168.20.121/MPAS/FN0601/*"],
-      "js": ["jquery.min.js", "manpower.js"]
-    }, {
-      "matches": ["https://www.chotot.com/quang-nam-da-nang/thue-phong-tro*", "https://www.chotot.com/quang-nam-da-nang/thue-nha-dat*"],
-      "js": ["jquery.min.js", "sites/chotot.com/index.js"]
-    }, {
-      "matches": ["https://www.chotot.com/quang-nam-da-nang/mua-ban-may-tinh-laptop*",
-	  "https://m.chotot.com/quang-nam-da-nang/mua-ban-may-tinh-laptop*", "https://www.chotot.com/quang-nam-da-nang/da-nang/mua-ban-may-tinh-laptop*"],
-      "js": ["jquery.min.js", "sites/chotot.com/laptop.js"]
-    }
+	"content_scripts": [
+		{
+		  "matches": ["https://www.chotot.com/quang-nam-da-nang/thue-phong-tro*", "https://www.chotot.com/quang-nam-da-nang/thue-nha-dat*"],
+		  "js": ["jquery.min.js", "sites/chotot.com/common.js", "sites/chotot.com/index.js"]
+		}, {
+		  "matches": ["https://www.chotot.com/quang-nam-da-nang/mua-ban-may-tinh-laptop*",
+		  "https://m.chotot.com/quang-nam-da-nang/mua-ban-may-tinh-laptop*", "https://www.chotot.com/quang-nam-da-nang/da-nang/mua-ban-may-tinh-laptop*"],
+		  "js": ["jquery.min.js", "sites/chotot.com/common.js", "sites/chotot.com/laptop.js"]
+		}, {
+		  "matches": ["*://*.tiki.vn/*"], 
+		  "js": ["jquery.min.js", "sites/dzut.tiki.vn/index.js"]
+		}
 	],
 	"web_accessible_resources": [ "/*"],
 	"manifest_version": 2

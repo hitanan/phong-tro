@@ -1,9 +1,8 @@
-jQuery(".listing-rows .chotot-list-row").each(function(){
-	if (jQuery(this).has('span.ad-type-suf').length ) {
-		jQuery(this).remove();
+$(".listing-rows .chotot-list-row").each(function(){
+	if ($(this).has('span.ad-type-suf').length ) {
+		$(this).remove();
 	} else {
-		jQuery(this).find("div#div-gpt-des-mid-list").remove();
+		$(this).find("div#div-gpt-des-mid-list").remove();
+		$(this).find("a").attr('target', '_blank');
 	}
 });
-
-jQuery(".div-gpt-ad-top-right, body .sunny_footer, #chotot-qc-zone-2, .listing-rows #gcsa, #main_content .cat_desc_in_list_page, #main_content .find_more_ads, #main_content #categories_container").remove();

@@ -1,10 +1,15 @@
 window.onload=loadData;
 
 function loadData(){
-	var dataObj = {'laptop-max-value':'0','open-only-first':false};
+	var dataObj = {
+		'laptop-max-value':'',
+		'open-only-first':false, 
+		'laptop-title-exclude': ''
+	};
 	chrome.storage.local.get(dataObj, function(obj) {
-		document.getElementById('laptop-max-value').value = obj['laptop-max-value'];
-		document.getElementById('open-only-first').checked = obj['open-only-first'];
+		document.getElementById('laptop-max-value').value = obj['laptop-max-value'] || '';
+		document.getElementById('laptop-title-exclude').value = obj['laptop-title-exclude'] || '';
+		document.getElementById('open-only-first').checked = obj['open-only-first'] || false;
 	});
 	
 	document.getElementById('laptop-max-value').focus();
@@ -13,6 +18,7 @@ function loadData(){
 function saveOptions() {
 	var dataObj = {};
 	dataObj['laptop-max-value'] = document.getElementById('laptop-max-value').value;
+	dataObj['laptop-title-exclude'] = document.getElementById('laptop-title-exclude').value;
 	dataObj['open-only-first'] = document.getElementById('open-only-first').checked;
 	chrome.storage.local.set(dataObj, function() {window.close();});
 }

@@ -3,13 +3,26 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/options.css">
 	<script type="text/javascript" src="options.js"></script>
+	<link 
 </head>
 <body>
 	<form id="fform">
-		<label for="laptop-max-value">laptop max value</label><input type="text" id="laptop-max-value" autofocus><br/>
-		<input type="checkbox" id="open-only-first"><label>open only first link each group</label>
-		<button type="submit">save</button>
+		<p>
+			<input type="checkbox" id="open-only-first"><label>open only first link each group</label>
+		</p>
+		<p>
+			<label for="laptop-max-value">laptop max value (đ)</label>
+			<input type="text" id="laptop-max-value" autofocus>
+		</p>
+		<p>
+			<label for="laptop-title-exclude">laptop Exclude strings</label>
+			<textarea id="laptop-title-exclude" placeholder="Laptop title Exclude strings, one by line" rows="10"></textarea>
+		</p>
+		
+		
+		<p><button type="submit">save</button></p>
 	</form>
 </body>
 </html>
