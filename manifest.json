@@ -31,9 +31,6 @@
 		  "matches": ["https://www.chotot.com/quang-nam-da-nang/mua-ban-may-tinh-laptop*",
 		  "https://m.chotot.com/quang-nam-da-nang/mua-ban-may-tinh-laptop*", "https://www.chotot.com/quang-nam-da-nang/da-nang/mua-ban-may-tinh-laptop*"],
 		  "js": ["jquery.min.js", "sites/chotot.com/common.js", "sites/chotot.com/laptop.js"]
-		}, {
-		  "matches": ["*://*.tiki.vn/*"], 
-		  "js": ["jquery.min.js", "sites/dzut.tiki.vn/index.js"]
 		}
 	],
 	"web_accessible_resources": [ "/*"],
