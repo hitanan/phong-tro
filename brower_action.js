@@ -8,7 +8,10 @@ var links = [
 	'http://rongbay.com/Da-Nang/Nha-rieng-nguyen-can-Thue-va-cho-thue-nha-c272-t786-d141.html?pr=6&md=141',
 	'http://rongbay.com/Da-Nang/Nha-tro-Phong-tro-Thue-va-cho-thue-nha-c272-t788-d141.html?pr=6&md=141',
 	'https://www.chotot.com/quang-nam-da-nang/mua-ban-may-tinh-laptop',
-	'http://rongbay.com/Da-Nang/Laptop-Netbook-May-tinh-va-Laptop-c1-t28.html'
+	'http://rongbay.com/Da-Nang/Laptop-Netbook-May-tinh-va-Laptop-c1-t28.html',
+	'http://alonhadat.com.vn/nha-dat/cho-thue/nha-trong-hem/da-nang/585/quan-thanh-khe.html',
+	'http://batdongsan.com.vn/cho-thue-nha-rieng-thanh-khe-ddn/-1/2/-1/-1',
+	'http://chothuedanang.net/cho-thue-nha-tro-phong-tro-thanh-khe-ddn.htm'
 ];
 
 function gotoPaths(ids) {

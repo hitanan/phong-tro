@@ -1,6 +1,6 @@
 var keywords= [];
 
-var DEBUG = false;
+var DEBUG = true;
 
 // get options data
 var dataObj = {
@@ -9,16 +9,17 @@ var dataObj = {
 	'laptop-title-exclude': ''
 };
 chrome.storage.local.get(dataObj, function(obj) {
-	var laptopMaxValue = parseInt(obj['laptop-max-value'], 10);
-	keywords = obj['laptop-title-exclude'].split('\n').map(t => t.toLowerCase());
+	dataObj['laptop-max-value'] = parseInt(obj['laptop-max-value'], 10);
+	keywords = obj['laptop-title-exclude'].split('\n').filter((t) => t != '').map(t => t.toLowerCase());
 	if (DEBUG) {
 		console.log(keywords);
 	}
 	
 	
 	if (DEBUG) {
-		console.log(laptopMaxValue);
+		console.log(dataObj['laptop-max-value']);
 	}
+
 	$(".listing-rows .chotot-list-row").each(function(){
 		// if ($(this).has('span.ad-type-suf').length ) {
 		// 	$(this).remove();
@@ -33,7 +34,7 @@ chrome.storage.local.get(dataObj, function(obj) {
 		
 		// get price
 		var price = $(this).find(".ad-price").text().trim().replace(/\./g, '');
-		if (containsKeywordsIn(itemTitle) || (price && isHighPrice(price, laptopMaxValue))) {
+		if ((keywords.length > 0 && containsKeywordsIn(itemTitle)) || (price && isHighPrice(price))) {
 			jQuery(this).remove();
 		} else {
 			jQuery(this).find("div#div-gpt-des-mid-list").remove();
@@ -47,14 +48,18 @@ chrome.storage.local.get(dataObj, function(obj) {
 	});
 });
 
-function isHighPrice(price, laptopMaxValue) {
+function isHighPrice(price) {
+	if(DEBUG) { console.log(dataObj['laptop-max-value']); }
+	if(dataObj['laptop-max-value'] == '') {
+		return false;
+	}
 	var d_idx = price.indexOf(" đ");
 	var real = price.substr(0, d_idx);
 	if (DEBUG) {
-		console.log(real);
+		console.log('real' + real);
 	}
 	real = parseInt(real, 10);
-	return real > laptopMaxValue;
+	return real > dataObj['laptop-max-value'];
 }
 
 function containsKeywordsIn(itemTitle) {
