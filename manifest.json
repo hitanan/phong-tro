@@ -25,12 +25,20 @@
 	},
 	"content_scripts": [
 		{
-		  "matches": ["https://www.chotot.com/quang-nam-da-nang/thue-phong-tro*", "https://www.chotot.com/quang-nam-da-nang/thue-nha-dat*", "https://www.chotot.com/quang-nam-da-nang/thue-van-phong-mat-bang-kinh-doanh*"],
-		  "js": ["jquery.min.js", "sites/chotot.com/common.js", "sites/chotot.com/index.js"]
+			"matches": [
+				"https://www.chotot.com/quang-nam-da-nang/da-nang/*"
+			],"js": [
+				"jquery.min.js", "sites/chotot.com/common.js", "sites/chotot.com/index.js"
+			]
 		}, {
-		  "matches": ["https://www.chotot.com/quang-nam-da-nang/mua-ban-may-tinh-laptop*",
-		  "https://m.chotot.com/quang-nam-da-nang/mua-ban-may-tinh-laptop*", "https://www.chotot.com/quang-nam-da-nang/da-nang/mua-ban-may-tinh-laptop*", "https://www.chotot.com/tp-ho-chi-minh/quan-1/mua-ban-may-tinh-laptop*"],
-		  "js": ["jquery.min.js", "sites/chotot.com/common.js", "sites/chotot.com/laptop.js"]
+			"matches": [
+				"https://www.chotot.com/quang-nam-da-nang/mua-ban-may-tinh-laptop*",
+				"https://m.chotot.com/quang-nam-da-nang/mua-ban-may-tinh-laptop*", 
+				"https://www.chotot.com/quang-nam-da-nang/da-nang/mua-ban-may-tinh-laptop*", 
+				"https://www.chotot.com/tp-ho-chi-minh/quan-1/mua-ban-may-tinh-laptop*"
+			], "js": [
+				"jquery.min.js", "sites/chotot.com/common.js", "sites/chotot.com/laptop.js"
+			]
 		}
 	],
 	"web_accessible_resources": [ "/*"],
