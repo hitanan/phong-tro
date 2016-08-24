@@ -11,7 +11,8 @@ var links = [
 	'http://rongbay.com/Da-Nang/Laptop-Netbook-May-tinh-va-Laptop-c1-t28.html',
 	'http://alonhadat.com.vn/nha-dat/cho-thue/nha-trong-hem/3/da-nang.html?dt=0&gia=2&huong=0',
 	'http://batdongsan.com.vn/cho-thue-nha-rieng-da-nang/-1/2/-1/-1',
-	'http://chothuedanang.net/cho-thue-nha-tro-phong-tro-da-nang.htm'
+	'http://chothuedanang.net/cho-thue-nha-tro-phong-tro-da-nang.htm',
+	'https://www.chotot.com/quang-nam-da-nang/thue-van-phong-mat-bang-kinh-doanh?mre=2#'
 ];
 
 function gotoPaths(ids) {
@@ -69,7 +70,7 @@ window.addEventListener('load', function(evt) {
 		gotoPaths(ids);
 	});
 	$('#timnha').on('click', function(e) {
-		var ids = [12,11,10,6,5,4,2];
+		var ids = [12,11,10,6,5,4,13,2];
 		gotoPaths(ids);
 	});
 	$('#timlaptop').on('click', function(e) {
