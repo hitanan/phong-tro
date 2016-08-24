@@ -2,16 +2,16 @@ var links = [
 	'https://www.facebook.com/thuenhadn',
 	'https://www.chotot.com/quang-nam-da-nang/thue-phong-tro?mre=2',
 	'https://www.chotot.com/quang-nam-da-nang/thue-nha-dat?mre=2',
-	'https://muaban.net/nha-tro-phong-tro-quan-thanh-khe-l1507-c3405?min=1000&max=3000&cr=1000',
-	'https://muaban.net/nha-hem-ngo-quan-thanh-khe-l1507-c3407?min=1000&max=3000&cr=1000',
+	'https://muaban.net/nha-tro-phong-tro-da-nang-l15-c3405?min=1000&max=3000&cr=1000',
+	'https://muaban.net/nha-hem-ngo-da-nang-l15-c3407?min=1000&max=3000&cr=1000',
 	'http://rongbay.com/Da-Nang/Nha-trong-ngo-hem-kiet-Thue-va-cho-thue-nha-c272-t791-d141.html?pr=6&md=141',
 	'http://rongbay.com/Da-Nang/Nha-rieng-nguyen-can-Thue-va-cho-thue-nha-c272-t786-d141.html?pr=6&md=141',
 	'http://rongbay.com/Da-Nang/Nha-tro-Phong-tro-Thue-va-cho-thue-nha-c272-t788-d141.html?pr=6&md=141',
 	'https://www.chotot.com/quang-nam-da-nang/mua-ban-may-tinh-laptop',
 	'http://rongbay.com/Da-Nang/Laptop-Netbook-May-tinh-va-Laptop-c1-t28.html',
-	'http://alonhadat.com.vn/nha-dat/cho-thue/nha-trong-hem/da-nang/585/quan-thanh-khe.html',
-	'http://batdongsan.com.vn/cho-thue-nha-rieng-thanh-khe-ddn/-1/2/-1/-1',
-	'http://chothuedanang.net/cho-thue-nha-tro-phong-tro-thanh-khe-ddn.htm'
+	'http://alonhadat.com.vn/nha-dat/cho-thue/nha-trong-hem/3/da-nang.html?dt=0&gia=2&huong=0',
+	'http://batdongsan.com.vn/cho-thue-nha-rieng-da-nang/-1/2/-1/-1',
+	'http://chothuedanang.net/cho-thue-nha-tro-phong-tro-da-nang.htm'
 ];
 
 function gotoPaths(ids) {
@@ -69,7 +69,7 @@ window.addEventListener('load', function(evt) {
 		gotoPaths(ids);
 	});
 	$('#timnha').on('click', function(e) {
-		var ids = [6,5,4,2];
+		var ids = [12,11,10,6,5,4,2];
 		gotoPaths(ids);
 	});
 	$('#timlaptop').on('click', function(e) {
