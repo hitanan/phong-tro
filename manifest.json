@@ -25,7 +25,7 @@
 	},
 	"content_scripts": [
 		{
-		  "matches": ["https://www.chotot.com/quang-nam-da-nang/thue-phong-tro*", "https://www.chotot.com/quang-nam-da-nang/thue-nha-dat*"],
+		  "matches": ["https://www.chotot.com/quang-nam-da-nang/thue-phong-tro*", "https://www.chotot.com/quang-nam-da-nang/thue-nha-dat*", "https://www.chotot.com/quang-nam-da-nang/thue-van-phong-mat-bang-kinh-doanh*"],
 		  "js": ["jquery.min.js", "sites/chotot.com/common.js", "sites/chotot.com/index.js"]
 		}, {
 		  "matches": ["https://www.chotot.com/quang-nam-da-nang/mua-ban-may-tinh-laptop*",
