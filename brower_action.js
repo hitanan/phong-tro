@@ -18,8 +18,15 @@ var data = {
 	],
 	'timlaptop': [
 		'http://rongbay.com/Da-Nang/Laptop-Netbook-May-tinh-va-Laptop-c1-t28.html',
-		'https://www.chotot.com/quang-nam-da-nang/mua-ban-may-tinh-laptop'
-	]
+		'https://www.chotot.com/quang-nam-da-nang/da-nang/mua-ban-may-tinh-laptop',
+		'https://muaban.net/laptop-may-de-ban-may-chu-da-nang-l15-c63?min=1000&max=3000&cr=1000'
+	],
+	'timlaptopnew': [
+		'https://www.thegioididong.com/laptop?p=duoi-8-trieu&o=gia-thap-den-cao',
+		'http://fptshop.com.vn/may-tinh-xach-tay?tinh-nang=&muc-gia=tu-5-10-trieu&bo-xu-ly=intel-core-i3&ram=4-gb&sl=gia-thap-den-cao',
+		'https://vienthonga.vn/laptop?subcats=Y&features_hash=V20122.V20104.P12'
+	],
+	'timtu': ['https://www.chotot.com/quang-nam-da-nang/da-nang/mua-ban-noi-ngoai-that-cay-canh/t%E1%BB%A7#']
 };
 
 function gotoPaths(urls) {
@@ -80,6 +87,12 @@ window.addEventListener('load', function(evt) {
 	});
 	$('#timlaptop').on('click', function(e) {
 		gotoPaths(data.timlaptop);
+	});
+	$('#timlaptopnew').on('click', function(e) {
+		gotoPaths(data.timlaptopnew);
+	});
+	$('#timtu').on('click', function(e) {
+		gotoPaths(data.timtu);
 	});
 	$('#timtonghop').on('click', function(e) {
 		/*var ids = [1,2,8];

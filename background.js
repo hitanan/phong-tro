@@ -6,6 +6,8 @@
 function onClickHandler(info, tab) {
     var url = 'https://www.google.com/maps/search/' + encodeURI(info.selectionText + ' Đà Nẵng');
 	chrome.tabs.create({url: url, active: true});
+	
+	console.log(info.menuItemId);
 };
 
 
@@ -20,6 +22,7 @@ chrome.runtime.onInstalled.addListener(function() {
       console.log("Got expected error: " + chrome.extension.lastError.message);
     }
   });
+
 });
 
 

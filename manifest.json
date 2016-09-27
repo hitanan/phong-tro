@@ -26,7 +26,7 @@
 	"content_scripts": [
 		{
 			"matches": [
-				"https://www.chotot.com/quang-nam-da-nang/da-nang/*"
+				"https://www.chotot.com/*"
 			],"js": [
 				"jquery.min.js", "sites/chotot.com/common.js", "sites/chotot.com/index.js"
 			]
@@ -38,6 +38,12 @@
 				"https://www.chotot.com/tp-ho-chi-minh/quan-1/mua-ban-may-tinh-laptop*"
 			], "js": [
 				"jquery.min.js", "sites/chotot.com/common.js", "sites/chotot.com/laptop.js"
+			]
+		}, {
+			"matches": [
+				"https://muaban.net/laptop-may-de-ban-may-chu-da-nang*"
+			], "js": [
+				"jquery.min.js", "sites/muaban.net/common.js", "sites/muaban.net/laptop.js"
 			]
 		}
 	],
