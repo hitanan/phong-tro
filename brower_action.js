@@ -26,7 +26,12 @@ var data = {
 		'http://fptshop.com.vn/may-tinh-xach-tay?tinh-nang=&muc-gia=tu-5-10-trieu&bo-xu-ly=intel-core-i3&ram=4-gb&sl=gia-thap-den-cao',
 		'https://vienthonga.vn/laptop?subcats=Y&features_hash=V20122.V20104.P12'
 	],
-	'timtu': ['https://www.chotot.com/quang-nam-da-nang/da-nang/mua-ban-noi-ngoai-that-cay-canh/t%E1%BB%A7#']
+	'timtu': ['https://www.chotot.com/quang-nam-da-nang/da-nang/mua-ban-noi-ngoai-that-cay-canh/t%E1%BB%A7#'
+	],
+	'timtulanh':[
+		'https://www.chotot.com/quang-nam-da-nang/da-nang/mua-ban?q=t%E1%BB%A7+l%E1%BA%A1nh'
+	]
+
 };
 
 function gotoPaths(urls) {
@@ -99,7 +104,9 @@ window.addEventListener('load', function(evt) {
 		gotoPaths(ids);
 		*/
 	});
-	
+	$('#timtulanh').on('click', function(e) {
+		gotoPaths(data.timtulanh);
+	});
 	/*
 	// create string link ids
 	
