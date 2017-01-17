@@ -30,6 +30,9 @@ var data = {
 	],
 	'timtulanh':[
 		'https://www.chotot.com/quang-nam-da-nang/da-nang/mua-ban?q=t%E1%BB%A7+l%E1%BA%A1nh'
+	],
+	'timdienthoai':[
+		'https://www.chotot.com/quang-nam-da-nang/da-nang/mua-ban-dien-thoai-di-dong'
 	]
 
 };
@@ -106,6 +109,9 @@ window.addEventListener('load', function(evt) {
 	});
 	$('#timtulanh').on('click', function(e) {
 		gotoPaths(data.timtulanh);
+	});
+	$('#timdienthoai').on('click', function(e) {
+		gotoPaths(data.timdienthoai);
 	});
 	/*
 	// create string link ids
